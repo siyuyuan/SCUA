@@ -27,11 +27,11 @@ python3 teacherLMs.py --task concept_extraction
 ```
 - Analogy Generation
 ```bash
-python3 teacherLMs.py --task analogy_generation --type {analogy_type}
+python3 teacherLMs.py --task analogy_generation --model_name {model_name} --type {analogy_type}
 ```
 - Scientific QA
 ```bash
-python3 studentLMs.py --task {task_dataset} --type {analogy_type}
+python3 studentLMs.py --task {task_dataset} --model_name {model_name} --type {analogy_type}
 ```
 
 ## Contact
