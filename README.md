@@ -21,17 +21,21 @@ Drawing on principles of human education, we propose the SCUA, i.e., **S**cienti
 
 ## Analogy Generation from Teacher LMs
 
-- Scientific Concept Extraction 
 ```bash
-python3 teacherLMs.py --task concept_extraction
+export DATA_TYPE=openai #openai or azure
+export OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+export OPENAI_API_BASE=YOUR_OPENAI_API_BASE # https://api.openai.com/v1 or else
+export OPENAI_API_VERSION=YOUR_OPENAI_API_VERSION
+python3 teacherLMs.py --dataset {task_dataset} --model_name {model_name} --analogy_type {analogy_type}
 ```
-- Analogy Generation
+
+## Scientific QA for Student LMs
 ```bash
-python3 teacherLMs.py --task analogy_generation --model_name {model_name} --type {analogy_type}
-```
-- Scientific QA
-```bash
-python3 studentLMs.py --task {task_dataset} --model_name {model_name} --type {analogy_type}
+export DATA_TYPE=openai #openai or azure
+export OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+export OPENAI_API_BASE=YOUR_OPENAI_API_BASE
+export OPENAI_API_VERSION=YOUR_OPENAI_API_VERSION
+python3 studentLMs.py --dataset {task_dataset} --teacherLM {teacherLM} --studentLM {studentLM} --analogy_type {analogy_type}
 ```
 
 ## Contact
