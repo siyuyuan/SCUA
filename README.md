@@ -44,5 +44,12 @@ If you have any problems, please contact [Siyu Yuan](mailto:syyuan21@m.fudan.edu
 
 ## Citation
 
-If our paper or related resources prove valuable to your research, we kindly ask for citation. 
+```
+@article{yuan2024boosting,
+  title={Boosting Scientific Concepts Understanding: Can Analogy from Teacher Models Empower Student Models?},
+  author={Yuan, Siyu and Jiayang, Cheng and Qiu, Lin and Yang, Deqing},
+  journal={arXiv preprint arXiv:2406.11375},
+  year={2024}
+}
+```
 
